@@ -20,6 +20,7 @@ pipeline{
           }
           steps{
             sh 'lscpu'
+            sh 'systemctl status jenkins'
           }
         }
         stage('2-parallel-job Francis-job2'){
